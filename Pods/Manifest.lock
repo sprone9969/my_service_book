@@ -1,0 +1,16 @@
+PODS:
+  - RZTransitions (1.2.1)
+
+DEPENDENCIES:
+  - RZTransitions
+
+SPEC REPOS:
+  trunk:
+    - RZTransitions
+
+SPEC CHECKSUMS:
+  RZTransitions: 0e0013fda6989ee84dc5e44dca79fd539e1a975a
+
+PODFILE CHECKSUM: 93432984e92bcd99c15923da1d4f83bdc71daca2
+
+COCOAPODS: 1.9.1

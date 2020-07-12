@@ -1,0 +1,6 @@
+framework module Pods_my_service_book_my_service_bookUITests {
+  umbrella header "Pods-my service book-my service bookUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
