@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -33,7 +34,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UsG-Jg-SCF">
-                                <rect key="frame" x="20" y="479.5" width="374" height="46"/>
+                                <rect key="frame" x="20" y="480.5" width="374" height="46"/>
                                 <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="46" id="Tsn-Tg-2Ap"/>
@@ -47,7 +48,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ns2-ah-PGD">
-                                <rect key="frame" x="20" y="544.5" width="374" height="46"/>
+                                <rect key="frame" x="20" y="545.5" width="374" height="46"/>
                                 <color key="backgroundColor" systemColor="opaqueSeparatorColor" red="0.77647058820000003" green="0.77647058820000003" blue="0.7843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="46" id="zgi-HD-scC"/>
@@ -61,43 +62,59 @@
                                 </connections>
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iPM-wu-Hkn">
-                                <rect key="frame" x="0.0" y="271.5" width="414" height="163"/>
+                                <rect key="frame" x="0.0" y="271.5" width="414" height="164"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ваш номер телефона:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mHQ-rq-5hP">
-                                        <rect key="frame" x="20" y="8" width="176" height="21"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <rect key="frame" x="20" y="8" width="200" height="24"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Пароль:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="afU-kx-4SX">
-                                        <rect key="frame" x="20" y="80" width="64" height="21"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <rect key="frame" x="20" y="87" width="73.5" height="24"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="+7 912-345-67-89" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qLm-7E-1Rp">
-                                        <rect key="frame" x="20" y="37" width="374" height="34"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="+7 912-345-67-89" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qLm-7E-1Rp">
+                                        <rect key="frame" x="20" y="40" width="374" height="22"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <textInputTraits key="textInputTraits" keyboardType="phonePad" textContentType="tel"/>
                                     </textField>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Пароль должен содержать не менее 8 знаков" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9gu-5H-TQ0">
-                                        <rect key="frame" x="20" y="109" width="374" height="34"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Пароль должен содержать не менее 8 знаков" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9gu-5H-TQ0">
+                                        <rect key="frame" x="20" y="123" width="374" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <textInputTraits key="textInputTraits" secureTextEntry="YES" textContentType="password"/>
                                     </textField>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rKa-hh-Jxi">
+                                        <rect key="frame" x="20" y="147.5" width="374" height="3"/>
+                                        <color key="backgroundColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="afr-m7-ZLV">
+                                        <rect key="frame" x="20" y="63" width="374" height="3"/>
+                                        <color key="backgroundColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    </view>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <constraints>
                                     <constraint firstAttribute="trailing" secondItem="9gu-5H-TQ0" secondAttribute="trailing" constant="20" id="1CP-Vy-bQ0"/>
                                     <constraint firstItem="qLm-7E-1Rp" firstAttribute="top" secondItem="mHQ-rq-5hP" secondAttribute="bottom" constant="8" id="4GL-A6-t2k"/>
                                     <constraint firstItem="mHQ-rq-5hP" firstAttribute="leading" secondItem="iPM-wu-Hkn" secondAttribute="leading" constant="20" id="IDX-vx-r5f"/>
+                                    <constraint firstItem="rKa-hh-Jxi" firstAttribute="leading" secondItem="iPM-wu-Hkn" secondAttribute="leading" constant="20" id="LkX-wg-eql"/>
                                     <constraint firstAttribute="trailing" secondItem="qLm-7E-1Rp" secondAttribute="trailing" constant="20" id="NJf-tk-MGQ"/>
                                     <constraint firstItem="qLm-7E-1Rp" firstAttribute="leading" secondItem="iPM-wu-Hkn" secondAttribute="leading" constant="20" id="Pfp-C1-Jd8"/>
-                                    <constraint firstItem="afU-kx-4SX" firstAttribute="top" secondItem="qLm-7E-1Rp" secondAttribute="bottom" constant="9" id="R3t-jJ-1iC"/>
+                                    <constraint firstItem="afU-kx-4SX" firstAttribute="top" secondItem="qLm-7E-1Rp" secondAttribute="bottom" constant="25" id="R3t-jJ-1iC"/>
+                                    <constraint firstAttribute="trailing" secondItem="afr-m7-ZLV" secondAttribute="trailing" constant="20" id="UDD-Sx-1yA"/>
                                     <constraint firstAttribute="bottom" secondItem="9gu-5H-TQ0" secondAttribute="bottom" constant="20" id="WiG-Ve-cD8"/>
+                                    <constraint firstItem="afr-m7-ZLV" firstAttribute="top" secondItem="mHQ-rq-5hP" secondAttribute="bottom" constant="31" id="bVC-rO-IrJ"/>
+                                    <constraint firstAttribute="bottom" secondItem="rKa-hh-Jxi" secondAttribute="bottom" constant="13.5" id="dY7-xv-9vS"/>
+                                    <constraint firstItem="afr-m7-ZLV" firstAttribute="leading" secondItem="iPM-wu-Hkn" secondAttribute="leading" constant="20" id="dp8-az-klT"/>
                                     <constraint firstItem="afU-kx-4SX" firstAttribute="leading" secondItem="iPM-wu-Hkn" secondAttribute="leading" constant="20" id="f7X-z5-L8C"/>
                                     <constraint firstItem="9gu-5H-TQ0" firstAttribute="leading" secondItem="iPM-wu-Hkn" secondAttribute="leading" constant="20" id="k0h-CZ-XNK"/>
-                                    <constraint firstItem="9gu-5H-TQ0" firstAttribute="top" secondItem="afU-kx-4SX" secondAttribute="bottom" constant="8" id="r3T-fS-IjW"/>
+                                    <constraint firstItem="afU-kx-4SX" firstAttribute="top" secondItem="afr-m7-ZLV" secondAttribute="bottom" constant="21" id="o9s-70-KkE"/>
+                                    <constraint firstItem="9gu-5H-TQ0" firstAttribute="top" secondItem="afU-kx-4SX" secondAttribute="bottom" constant="12" id="r3T-fS-IjW"/>
+                                    <constraint firstItem="rKa-hh-Jxi" firstAttribute="top" secondItem="afU-kx-4SX" secondAttribute="bottom" constant="36.5" id="u22-tX-vfU"/>
+                                    <constraint firstAttribute="trailing" secondItem="rKa-hh-Jxi" secondAttribute="trailing" constant="20" id="z6s-gP-Vmy"/>
                                     <constraint firstItem="mHQ-rq-5hP" firstAttribute="top" secondItem="iPM-wu-Hkn" secondAttribute="top" constant="8" id="zSN-ob-eh3"/>
                                 </constraints>
                             </view>
@@ -137,7 +154,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
                 <tapGestureRecognizer id="vp1-Pc-fiL"/>
             </objects>
-            <point key="canvasLocation" x="-90" y="113"/>
+            <point key="canvasLocation" x="-91.304347826086968" y="112.5"/>
         </scene>
         <!--Cars2 View Controller-->
         <scene sceneID="HKb-I6-y2R">
@@ -182,7 +199,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wjG-yj-Nka" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1339" y="147"/>
+            <point key="canvasLocation" x="832" y="44"/>
         </scene>
         <!--No Car View Controller-->
         <scene sceneID="mqM-Z3-URX">
@@ -396,8 +413,6 @@
                                     <constraint firstItem="qKj-Nb-SEZ" firstAttribute="top" secondItem="98o-e0-DNJ" secondAttribute="top" id="gN3-vI-dVd"/>
                                     <constraint firstItem="qKj-Nb-SEZ" firstAttribute="leading" secondItem="98o-e0-DNJ" secondAttribute="leading" id="k6T-a6-9Sb"/>
                                 </constraints>
-                                <viewLayoutGuide key="contentLayoutGuide" id="ZNV-1r-LgQ"/>
-                                <viewLayoutGuide key="frameLayoutGuide" id="zeF-Gn-tf9"/>
                             </scrollView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yfC-qI-rqC">
                                 <rect key="frame" x="30" y="30" width="30" height="30"/>

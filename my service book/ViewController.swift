@@ -23,6 +23,8 @@ class ViewController: UIViewController, UITextFieldDelegate {
         vhodBtn.layer.cornerRadius = vhodBtn.frame.size.height / 4
         registrationBtn.layer.cornerRadius = registrationBtn.frame.size.height / 4
         
+//        textField.addTarget(self, action: "textFieldDidChange:", forControlEvents: UIControlEvents.EditingChanged)  следить за измененем textfield
+        
     }
     
     @IBAction func LogInBtn(_ sender: Any) {
@@ -95,8 +97,14 @@ class ViewController: UIViewController, UITextFieldDelegate {
     //MARK:ERROR BORDER
     public func errorBorder(textField: UITextField) {
         textField.layer.cornerRadius = textField.frame.size.height / 4
-        textField.layer.borderWidth = 2
-        textField.layer.borderColor =  UIColor.red.cgColor
+        //textField.layer.borderWidth = 2
+        //textField.layer.borderColor =  UIColor.red.cgColor
     }
 }
 
+//MARK: TEXTFIELD CHANGE
+func textFieldDidChange(textField: UITextField) {
+    let alert = UIAlertController(title: "работае!", message: "Вы не ввели пароль", preferredStyle: .alert)
+    alert.addAction(UIAlertAction(title: "Ок", style: .default, handler: nil))
+    
+}
