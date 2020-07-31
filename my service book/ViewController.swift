@@ -9,6 +9,15 @@
 import UIKit
 
 class ViewController: UIViewController, UITextFieldDelegate {
+    @IBAction func phoneChange(_ sender: Any) { // проверяем что, чтото происходит https://stackoverflow.com/questions/28394933/how-do-i-check-when-a-uitextfield-changes
+        if phoneTxtFld.text?.count == 1 {
+            print("вошел")
+            self.phoneTxtFld.text = "+7 ("
+        }
+        if phoneTxtFld.text?.count == 7 {
+            self.phoneTxtFld.text! += ")"
+        }
+    }
     
     @IBOutlet weak var vhodBtn: UIButton!
     @IBOutlet weak var registrationBtn: UIButton!
@@ -23,7 +32,8 @@ class ViewController: UIViewController, UITextFieldDelegate {
         vhodBtn.layer.cornerRadius = vhodBtn.frame.size.height / 4
         registrationBtn.layer.cornerRadius = registrationBtn.frame.size.height / 4
         
-//        textField.addTarget(self, action: "textFieldDidChange:", forControlEvents: UIControlEvents.EditingChanged)  следить за измененем textfield
+        
+        
         
     }
     
@@ -102,9 +112,6 @@ class ViewController: UIViewController, UITextFieldDelegate {
     }
 }
 
-//MARK: TEXTFIELD CHANGE
-func textFieldDidChange(textField: UITextField) {
-    let alert = UIAlertController(title: "работае!", message: "Вы не ввели пароль", preferredStyle: .alert)
-    alert.addAction(UIAlertAction(title: "Ок", style: .default, handler: nil))
-    
-}
+//MARK: Phone TEXTFIELD CHANGE
+
+

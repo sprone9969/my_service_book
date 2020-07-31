@@ -80,6 +80,9 @@
                                         <rect key="frame" x="20" y="40" width="374" height="22"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <textInputTraits key="textInputTraits" keyboardType="phonePad" textContentType="tel"/>
+                                        <connections>
+                                            <action selector="phoneChange:" destination="BYZ-38-t0r" eventType="editingChanged" id="3zu-uq-0jc"/>
+                                        </connections>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Пароль должен содержать не менее 8 знаков" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9gu-5H-TQ0">
                                         <rect key="frame" x="20" y="123" width="374" height="21"/>
